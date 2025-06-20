@@ -1,0 +1,214 @@
+h1{
+    color: black;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 5vw;   /*Styles the main headers*/
+}
+
+#logo{
+    max-width: 11%;
+    height: auto;
+    float: left;
+    margin-top: 0px;
+}/*Styles the logo */
+
+#current{
+    color: green;
+} /*Styles current page title*/
+
+body{
+    background-color: rgb(231, 231, 231);
+}/*Styles the page background colour*/
+
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkgreen;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5vw;
+}/*This adds style to the navigation bar*/
+
+
+
+#nav2 {
+  float: left;
+}/*This makes the navigation bar start from the left*/
+
+#nav2 a {
+  display: block;
+  color: rgba(255, 255, 255, 0.795);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}/*This adds more style to the navigation bar*/
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+.active {
+  background-color: lightgreen;
+}/*This changes the colour of the active section of the navigation bar*/
+
+
+h2{
+    background-color: darkgreen;
+    color:rgb(255, 255, 255);
+    font-size:1.5em;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    top: 0;
+}/*This adds style to the h2 element and allows it to stick to the top of the screen*/
+
+h3{
+    background-color: darkgreen;
+    color:rgb(255, 255, 255);
+    font-size:1.5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif
+}/*styles h3 texts*/
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.slide{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 75%;
+  height: 33vw;
+}/*styles images in slideshow*/
+
+.column {
+  float: left;
+  width: 300px;
+  margin: 20px;
+}/*style for middle column*/
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+}
+
+
+
+/* Middle column */
+.column.middle {
+  width: 30%;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+#page3{
+    display: none;
+}/*hides the contact page befor password entered*/
+
+#air{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 10vw;
+    margin: 0px;
+}
+
+#dataBox{
+  width: 25vw;
+  border: 15px solid green;
+  padding: 10vw;
+  margin-left: 26%;
+  text-align: center;
+  background-color: green;
+}/*Creates the box for the live data*/
+.about{
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+#showcase{
+  background-image:url('https://images.pexels.com/photos/6587854/pexels-photo-6587854.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+}/*Creates the landing page for the website*/
+
+button {
+  background-color: green; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}/*Styles button*/
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} 
+
+#cont{
+    background: green;
+    padding: 20px;
+}
+
+#cont li {
+  background: lightgreen;
+  color: black;
+  margin: 5px;
+}/*Styles the contact info section*/
+
+video{
+    background-position:center;
+    text-align:center;
+    margin-left:25%;
+}/*Adjusts video size*/
+
+h3{
+    text-align: center;
+}
+
+#datatable{
+    width:100%;
+    text-align:center;
+    border-style:solid;
+}/*Adjusts the data table*/
+
+h5{
+    font-family: "Raleway", sans-serif;
+    font-size:1.5em;
+}
+
+ol{
+    font-family: "Raleway", sans-serif;
+}
+

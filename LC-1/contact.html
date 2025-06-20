@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Safe Option</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="page3" onload = 'checkDetails()'>
+    
+    <header>
+   <h1>Safe Option Appliances
+        <img src= 'logo.png' id = 'logo'><br></h1>
+       <h1 id = 'current'>Contact</h1>
+   </header>
+
+    <nav>
+        <ul id = 'nav'>
+  <li id='nav2'><a href="index.html">Home</a></li>
+  <li id='nav2'><a href="about.html">About</a></li>
+  <li id='nav2' class = 'active'><a href="contact.html">Contact</a></li>
+  <li id='nav2'><a href="video.html">Video</a></li>
+  <li id='nav2'><a href="data.html">Live </a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <section>
+        <fieldset>
+            <legend>Contact Details</legend> <!--This creates the form for user data input -->
+            <form id = "myForm">  <!--This creates the form for user data input -->
+                 <label>Name</label>
+                 <input type="text" placeholder="Enter Name" id="name" name="Name"><br><br>
+                 <label>Age</label>
+                 <input type="number" placeholder="Enter Age" id="age" name="Age"><br><br>
+                 <label>Email</label>
+                 <input type="email" placeholder="@" id="email" name="Email"><br><br>
+                 <label>Date of Purchase</label>
+                 <input type="date"  id="date" name="Date"><br><br>
+                 <label>Requests</label>
+                 <textarea rows="4" cols="30"   id="text" name="Textarea"></textarea><br><br>
+                 
+                <label for="type">Package purchased:</label>
+                <select name="type" id="type">
+                <option value="single">Single alarm</option>
+                <option value="double">Alarm and Doorbell</option>
+                <option value="family">Alarm Family Bundle(6 rooms)</option>
+                <option value="Plus">Plus Bundle(Includes Smart Doorbell)</option>
+                </select> <!--These will be displayed on the dropdown menu to be selected as the desired package-->
+
+                <h3>Purchase Information</h3>
+                <input type="range" min="1" max="10" value="10" id="amount" oninput="this.nextElementSibling.value = this.value+' Packages'"> <!--This creates the bar that allows the user to select the number of packages they would like to purchase-->
+                <output>10 Packages</output> 
+                <h3>Review</h3>
+                <label>Poor</label>
+                <input type='radio' name="service">
+                <label>Average</label>
+                <input type='radio' name="service">
+                <label>Great</label>
+                <input type='radio' name="service">
+                <label>Excellent</label>
+                <input type='radio' name="service"> <!--These are labeling the radio boxes under the review section-->
+                <br>
+                <br>
+
+                <input type='submit' value="Enter Details" onclick="submitDetails()" 
+                </form> <!--This calls the function to submit the details entered in the form -->
+            </fieldset>
+            <p id = 'entered'></p><!--This is used to store the message that will be displayed to the user -->
+
+    </section>
+
+     <ul id='cont'>
+    <li>You can contact us at:</li>
+    <li>Phone Number - 003 004 0505</li>
+    <li>Email - contact@safeoption.com</li>
+    <li>Twitter - @SafeOption</li>
+    </ul><!--list for contact information-->
+
+
+    
+    <footer>
+      <p>Made by <b>Elvis Okoh (2022)</b></p>
+    </footer>
+
+ <button type="button" onclick="changeStyle()">Click Me To Increase Font Size</button>
+
+    <button type="button" onclick="changeStyleDe()">Click Me To Decrease Font Size</button>
+
+
+        
+    <script src="script1.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

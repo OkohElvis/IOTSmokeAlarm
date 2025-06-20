@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Safe Option</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+      <img src= 'logo.png' id = 'logo'>
+  </head>
+  <body  id='myDiv' onload="getAir()">
+
+ <h1>Safe Option Appliances
+        <br></h1>
+       <h1 id = 'current'>Live Data</h1>
+   </header>
+
+<nav>
+    <ul id = 'nav'>
+  <li id='nav2'><a href="index.html">Home</a></li>
+  <li id='nav2'><a href="about.html">About</a></li>
+  <li id='nav2'><a href="contact.html">Contact</a></li>
+  <li id='nav2'><a href="video.html">Video</a></li>
+  <li id='nav2' class = 'active'><a href="data.html">Live</a></li>
+        </ul>
+    </nav><!--This is used to create the navigation bar at the top of the screen-->
+
+
+
+<h2>On this page the live data for the smoke detector is shown. If the number below rises above 400 you will be notified</h2>
+<div id="dataBox">
+<p id="air">DATA SHOWS HERE</p> <!--This is used to display the live data received by the website-->
+</div>
+
+<br>
+
+      <table id='datatable'>
+          <tr><th>Data</th><th>Time</th></tr> <!--this table displays the date and time on the live data page-->
+      </table>
+ <button type="button" onclick="changeStyle()">Click Me To Increase Font Size</button>
+    <button type="button" onclick="changeStyleDe()">Click Me To Decrease Font Size</button>
+
+      <footer>
+          <p>Made by <b>Elvis Okoh (2022)</b></p>
+    </footer>
+      
+    <script src="script.js"></script>
+     <div id="google_translate_element"></div>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

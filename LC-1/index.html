@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> <!-- This imports fonts from google fonts-->
+
+
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Option</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id='myDiv'>
+    
+    <header id='showcase'>
+   <h1 class = 'head'>Safe Option Appliances 
+       <img src= 'logo.png' id = 'logo'></h1>
+       <h1 id = 'current'>Home Page</h1>
+       <button type="button" onClick="document.getElementById('mid').scrollIntoView();" >Welcome</button><!--Button on landing page-->
+   </header>
+
+
+    <nav>
+        <ul id = 'nav'>
+  <li id='nav2' class = 'active'><a href="index.html">Home</a></li>
+  <li id='nav2'><a href="about.html">About</a></li>
+  <li id='nav2'><a href="contact.html">Contact</a></li>
+  <li id='nav2'><a href="video.html">Video</a></li>
+  <li id='nav2'><a href="data.html">Live </a></li>
+        </ul>
+    </nav><!--This is used to create the navigation bar at the top of the screen-->
+
+     <br>
+
+     <section>
+        <h3>Products </h3>
+
+        <img class="slide" src="smoke.jpg">
+        <img class="slide" src="ssa.jpg">
+        <img class="slide" src="smartdbell.jpeg"><!-- These images are added to the class 'slide' so they can be used in the slideshow separately from other images -->
+
+        <h3 id='mid'>Safe Option</h3>
+         <h5>Products Available</h5>
+        <ol>
+            <li>Smart smoke alarm</li>
+            <li>Smart doorbell</li>
+        </ol>
+        
+
+   <p>
+   The Safe Option provides the devices that help secure your home,
+   </p>
+    <p>Safe Options home devices are designed to advance home security, in the event of a fire the Safe Option smokesense  will alert the home owner by app and by the traditional home alarm. We at Safe Option are also the creators of the smart smoke alarm.</p>
+         <h4>For more information on the dangers of fire in Irish households</h4>
+         <a href = 'https://www.irishtimes.com/news/social-affairs/no-smoke-alarms-in-almost-40-of-fatal-house-fires-1.4442121' target="_blank">Click Here</a>
+     </section>
+
+   <footer>
+       <p>Made by <b>Elvis Okoh (2022)</b></p>
+    </footer>
+    <button type="button" onclick="changeStyle()">Click Me To Increase Font Size</button> <!--Button to increase page font-->
+
+    <button type="button" onclick="changeStyleDe()">Click Me To Decrease Font Size</button> <!--Button to decrease page font-->
+
+      <div id="google_translate_element"></div>
+
+    <script src="script.js"></script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
+
